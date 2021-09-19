@@ -1,0 +1,28 @@
+{
+  "name": "y-whois",
+  "version": "1.0.1",
+  "description": "👽 Whois Resources Managed By Yummy Capital",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "generate": "node ./build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yummy-Capital/y-whois.git"
+  },
+  "author": "Yummy Capital",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yummy-Capital/y-whois/issues"
+  },
+  "homepage": "https://github.com/Yummy-Capital/y-whois#readme",
+  "dependencies": {
+    "bech32": "^2.0.0",
+    "buffer": "^6.0.3",
+    "create-hash": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/create-hash": "^1.2.2"
+  }
+}
