@@ -12,6 +12,12 @@ $ npm run build
 # generate
 $ npm run generate
 
-# generate <size> <label>
-$ npm run generate 200 "ibc escrow-address"
+# generate <preffix>
+$ npm run generate crc
+
+# generate <preffix> <size>
+$ npm run generate crc 200
+
+# generate <preffix> <size> <label>
+$ npm run generate crc 200 "ibc escrow-address"
 ```
