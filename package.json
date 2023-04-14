@@ -1,22 +1,22 @@
 {
-  "name": "y-whois",
-  "version": "1.0.1",
-  "description": "👽 Whois Resources Managed By Yummy Capital",
-  "main": "index.ts",
+  "name": "y-whois-escrow-address-generator",
+  "version": "1.1.0",
+  "description": "🤓 Whois Escrow Address Generator By Yummy Capital",
   "scripts": {
     "build": "tsc",
-    "generate": "node ./build"
+    "generate:crc": "node ./build crc > addresses.json",
+    "generate:cro": "node ./build cro > addresses.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yummy-Capital/y-whois.git"
+    "url": "git+https://github.com/Yummy-Capital/y-whois-escrow-address-generator.git"
   },
   "author": "Yummy Capital",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yummy-Capital/y-whois/issues"
+    "url": "https://github.com/Yummy-Capital/y-whois-escrow-address-generator/issues"
   },
-  "homepage": "https://github.com/Yummy-Capital/y-whois#readme",
+  "homepage": "https://github.com/Yummy-Capital/y-whois-escrow-address-generator#readme",
   "dependencies": {
     "bech32": "^2.0.0",
     "buffer": "^6.0.3",

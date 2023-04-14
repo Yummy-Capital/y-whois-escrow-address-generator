@@ -2,9 +2,6 @@ import { bech32 } from 'bech32'
 import { Buffer } from 'buffer'
 import createHash from 'create-hash'
 
-// the Bech32 prefix for account address
-const PREFFIX = 'cro'
-
 // Version defines the current version the IBC tranfer
 const VERSION = 'ics20-1'
 
@@ -29,7 +26,7 @@ const getAddressHash = (portID: string, channelID: string) => {
   return hash.slice(0, 20)
 }
 
-export const getEscrowAddress = (portID: string, channelID: string) => {
+export const getEscrowAddress = (preffix: string, portID: string, channelID: string) => {
   const hash = getAddressHash(portID, channelID)
-  return encode(PREFFIX, new Uint8Array(hash))
+  return encode(preffix, new Uint8Array(hash))
 }
